@@ -27,60 +27,62 @@ if d >= 200 and d<=2500:
     print carta
     print "Su saldo es:", d
     p=int(raw_input("Que desea ordenar?"))
-    if p ==1:
-        print "A seleccionado Papas fritas"
-        if d>=1200:
-            v = d-1200
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p ==2:
-        print "A seleccionado Sandwich combinado"
-        if d>=2500:
-            print "Tome su producto"
-        else:print "su saldo es insuficiente"
-    if p ==3:
-        print "A seleccionado Pescadito"
-        if d>=1800:
-            v = d-1800
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p == 4:
-        print "A seleccionado Empanada de Carne"
-        if d>=1700:
-            v = d-1700
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p == 5:
-        print "A seleccionado Arepa"
-        if d>=2000:
-            v = d-2000
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p == 6:
-        print "A seleccionado Gaseosa"
-        if d>=1600:
-            v = d-1600
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p == 7:
-        print "A seleccionado Vaso de Te"
-        if d>=1000:
-            v = d-1000
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p == 8:
-        print "A seleccionado Dulce"
-        if d>=200:
-            v = d-200
-            print "Tome su producto"
-            print "Su cambio es:", v
-        else:print "su saldo es insuficiente"
-    if p == 9:
-        print final9, d
+    if p>=1 and p<=9:
+        if p ==1:
+            print "A seleccionado Papas fritas"
+            if d>=1200:
+                v = d-1200
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p ==2:
+            print "A seleccionado Sandwich combinado"
+            if d>=2500:
+                print "Tome su producto"
+            else:print "su saldo es insuficiente"
+        if p ==3:
+            print "A seleccionado Pescadito"
+            if d>=1800:
+                v = d-1800
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p == 4:
+            print "A seleccionado Empanada de Carne"
+            if d>=1700:
+                v = d-1700
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p == 5:
+            print "A seleccionado Arepa"
+            if d>=2000:
+                v = d-2000
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p == 6:
+            print "A seleccionado Gaseosa"
+            if d>=1600:
+                v = d-1600
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p == 7:
+            print "A seleccionado Vaso de Te"
+            if d>=1000:
+                v = d-1000
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p == 8:
+            print "A seleccionado Dulce"
+            if d>=200:
+                v = d-200
+                print "Tome su producto"
+                print "Su cambio es:", v
+            else:print "su saldo es insuficiente"
+        if p == 9:
+            print final9, d
+    else:print"opcion invalida"
 else: print final, d
